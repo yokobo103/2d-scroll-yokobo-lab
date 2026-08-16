@@ -1,0 +1,1 @@
+Use the accepted center modules as geometry and material references. One finished left end cap with rounded outer edge and a right connection clamp matching the center module. Same top edge and thickness, solid #FF00FF background, no text.

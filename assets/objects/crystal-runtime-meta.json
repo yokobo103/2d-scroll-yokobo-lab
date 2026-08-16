@@ -1,0 +1,768 @@
+{
+  "nozzle": [
+    {
+      "source": "assets/objects/crystal_floor_nozzle/processed/nozzle-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/nozzle-1.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        10,
+        139,
+        182,
+        183
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_floor_nozzle/processed/nozzle-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/nozzle-2.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        10,
+        111,
+        181,
+        183
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_floor_nozzle/processed/nozzle-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/nozzle-3.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        10,
+        59,
+        181,
+        183
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_floor_nozzle/processed/nozzle-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/nozzle-4.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        10,
+        91,
+        182,
+        183
+      ]
+    }
+  ],
+  "remote-switch": [
+    {
+      "source": "assets/objects/crystal_remote_switch/processed/remote-switch-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/remote-switch-1.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        33,
+        64,
+        159,
+        179
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_remote_switch/processed/remote-switch-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/remote-switch-2.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        33,
+        34,
+        159,
+        179
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_remote_switch/processed/remote-switch-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/remote-switch-3.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        33,
+        14,
+        159,
+        179
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_remote_switch/processed/remote-switch-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/remote-switch-4.webp",
+      "size": [
+        192,
+        192
+      ],
+      "alphaBounds": [
+        33,
+        52,
+        159,
+        179
+      ]
+    }
+  ],
+  "horizontal": [
+    {
+      "source": "assets/objects/crystal_growth_horizontal_segments/processed/horizontal-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/horizontal-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        14,
+        61,
+        113,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_horizontal_segments/processed/horizontal-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/horizontal-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        75,
+        118,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_horizontal_segments/processed/horizontal-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/horizontal-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        74,
+        118,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_horizontal_segments/processed/horizontal-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/horizontal-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        14,
+        72,
+        113,
+        119
+      ]
+    }
+  ],
+  "vertical": [
+    {
+      "source": "assets/objects/crystal_growth_vertical_segments/processed/vertical-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/vertical-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        48,
+        26,
+        79,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vertical_segments/processed/vertical-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/vertical-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        52,
+        11,
+        76,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vertical_segments/processed/vertical-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/vertical-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        52,
+        13,
+        76,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vertical_segments/processed/vertical-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/vertical-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        51,
+        13,
+        77,
+        119
+      ]
+    }
+  ],
+  "decay": [
+    {
+      "source": "assets/objects/crystal_decay_fx/processed/decay-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/decay-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        48,
+        118,
+        80
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_decay_fx/processed/decay-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/decay-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        54,
+        118,
+        73
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_decay_fx/processed/decay-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/decay-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        11,
+        53,
+        117,
+        75
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_decay_fx/processed/decay-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/decay-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        15,
+        25,
+        113,
+        102
+      ]
+    }
+  ],
+  "hazard": [
+    {
+      "source": "assets/objects/crystal_hazard_modules/processed/hazard-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        17,
+        40,
+        110,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_modules/processed/hazard-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        25,
+        118,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_modules/processed/hazard-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        23,
+        118,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_modules/processed/hazard-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        10,
+        29,
+        118,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_modules/processed/hazard-5.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-5.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        15,
+        28,
+        113,
+        119
+      ]
+    }
+  ],
+  "cluster-h": [
+    {
+      "source": "assets/objects/crystal_growth_platform_reference/processed/platform-crystal-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-h-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        12,
+        27,
+        115,
+        123
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_platform_reference/processed/platform-crystal-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-h-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        13,
+        54,
+        114,
+        123
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_platform_reference/processed/platform-crystal-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-h-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        11,
+        55,
+        117,
+        123
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_platform_reference/processed/platform-crystal-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-h-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        5,
+        37,
+        122,
+        123
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_platform_reference/processed/platform-crystal-5.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-h-5.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        14,
+        30,
+        114,
+        123
+      ]
+    }
+  ],
+  "inverted-core-platform": [
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/processed/inverted-core-platform-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-platform-1.webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "alphaBounds": [
+        20,
+        355,
+        1003,
+        669
+      ]
+    }
+  ],
+  "inverted-core-growth": [
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/growth/processed/crystal-growth-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-1.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        160,
+        446,
+        352,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/growth/processed/crystal-growth-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-2.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        160,
+        383,
+        352,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/growth/processed/crystal-growth-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-3.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        160,
+        270,
+        352,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/growth/processed/crystal-growth-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-4.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        122,
+        330,
+        389,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/growth/processed/crystal-growth-5.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-5.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        61,
+        297,
+        451,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/growth/processed/crystal-growth-6.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-6.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        20,
+        295,
+        491,
+        492
+      ]
+    }
+  ],
+  "inverted-core-collapse": [
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/collapse/processed/crystal-collapse-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-1.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        21,
+        276,
+        490,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/collapse/processed/crystal-collapse-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-2.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        20,
+        276,
+        491,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/collapse/processed/crystal-collapse-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-3.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        23,
+        273,
+        488,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/collapse/processed/crystal-collapse-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-4.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        25,
+        274,
+        487,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/collapse/processed/crystal-collapse-5.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-5.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        26,
+        263,
+        486,
+        492
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_inverted_core_platform/collapse/processed/crystal-collapse-6.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-6.webp",
+      "size": [
+        512,
+        512
+      ],
+      "alphaBounds": [
+        158,
+        424,
+        354,
+        492
+      ]
+    }
+  ],
+  "cluster-v": [
+    {
+      "source": "assets/objects/crystal_growth_vein_vertical/processed/vein-v-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-v-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        56,
+        19,
+        71,
+        109
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vein_vertical/processed/vein-v-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-v-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        54,
+        9,
+        74,
+        118
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vein_vertical/processed/vein-v-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-v-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        48,
+        10,
+        79,
+        118
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vein_vertical/processed/vein-v-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-v-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        50,
+        7,
+        78,
+        120
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_growth_vein_vertical/processed/vein-v-5.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/cluster-v-5.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        46,
+        6,
+        81,
+        121
+      ]
+    }
+  ],
+  "hazard-massive": [
+    {
+      "source": "assets/objects/crystal_hazard_massive_modules/processed/hazard-massive-1.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-massive-1.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        29,
+        35,
+        98,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_massive_modules/processed/hazard-massive-2.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-massive-2.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        22,
+        14,
+        105,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_massive_modules/processed/hazard-massive-3.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-massive-3.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        22,
+        13,
+        105,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_massive_modules/processed/hazard-massive-4.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-massive-4.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        22,
+        11,
+        105,
+        119
+      ]
+    },
+    {
+      "source": "assets/objects/crystal_hazard_massive_modules/processed/hazard-massive-5.png",
+      "runtime": "assets/stage01_normal_lab/runtime/crystal/hazard-massive-5.webp",
+      "size": [
+        128,
+        128
+      ],
+      "alphaBounds": [
+        28,
+        33,
+        100,
+        119
+      ]
+    }
+  ]
+}

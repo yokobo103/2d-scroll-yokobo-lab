@@ -1,0 +1,21 @@
+T1 baseline failure verification
+Date: 2026-08-12
+Command: npm run validate:hazard
+Expected exit code: 1
+
+energy-spill-v1 hazard-1.png: danger=0.000 dark-edge=0.031
+energy-vent-v1 energy-vent-1.png: danger=0.013 dark-edge=0.139
+energy-vent-v1 energy-vent-2.png: danger=0.504 dark-edge=0.129
+energy-vent-v1 energy-vent-3.png: danger=0.005 dark-edge=0.071
+energy-vent-v1 energy-vent-4.png: danger=0.014 dark-edge=0.149
+energy-vent-v1: warning-active color distance=0.273
+
+HAZARD VISUAL VALIDATION FAILED
+- energy-spill-v1: hazard-1.png danger hue ratio 0.000 < 0.46
+- energy-spill-v1: hazard-1.png dark outline ratio 0.031 < 0.08
+- energy-vent-v1: energy-vent-1.png danger hue ratio 0.013 < 0.46
+- energy-vent-v1: energy-vent-3.png danger hue ratio 0.005 < 0.46
+- energy-vent-v1: energy-vent-3.png dark outline ratio 0.071 < 0.08
+- energy-vent-v1: energy-vent-4.png danger hue ratio 0.014 < 0.46
+
+This is the required proof that the former cyan/purple assets are rejected before replacement.

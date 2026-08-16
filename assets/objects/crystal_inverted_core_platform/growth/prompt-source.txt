@@ -1,0 +1,1 @@
+Clean HD side-view 3x2 sprite sheet, six-frame crystal-platform generation. Fixed floor-nozzle anchor and scale. Sequence: idle nozzle, crystal nucleus, vertical core, short plate, 60% plate, completed inverted-core platform. Cyan translucent mineral facets on solid #FF00FF; no text, UI, isometric angle, ice slab, laser or hologram.

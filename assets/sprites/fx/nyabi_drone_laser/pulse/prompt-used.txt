@@ -1,0 +1,7 @@
+Create a four-frame horizontal laser pulse FX for the side-view Nyabi Drone in the bright Normal Lab.
+
+Exactly four animation frames in a clean 2x2 grid on a 100% solid flat #FF00FF background. No borders, labels, text, UI, cell dividers, characters, drone body, scenery, smoke, or impact burst.
+
+Each frame contains the same thin horizontal red-orange energy beam segment pointing left-to-right, centered in its invisible cell. Frame 1 dim red targeting line with tiny contained endpoint glow, frame 2 ignition with orange core, frame 3 bright white-hot center with red halo, frame 4 fading red core. Clean HD 2D game FX, crisp and readable, low visual noise.
+
+Keep identical length, thickness, position, and scale across frames. The beam occupies about 62% of cell width and no more than 12% of cell height. All glow remains tightly contained. Nothing crosses a cell edge; leave generous flat magenta margin on all sides.

@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "alphaThreshold": 128,
+  "canvasSize": [
+    320,
+    320
+  ],
+  "centerX": 160,
+  "footBaseline": 287,
+  "baselineConvention": "exclusive opaque-pixel boundary",
+  "sourceSpec": "assets/sprites/dr_yokobo/contact-source-spec.json",
+  "actions": {
+    "idle": {
+      "frames": [
+        {
+          "source": "assets/sprites/dr_yokobo/idle/processed/idle-1.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/idle/idle-1.webp",
+          "sourceFootBaseline": 287,
+          "shiftY": 0,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/idle/processed/idle-2.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/idle/idle-2.webp",
+          "sourceFootBaseline": 287,
+          "shiftY": 0,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/idle/processed/idle-3.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/idle/idle-3.webp",
+          "sourceFootBaseline": 287,
+          "shiftY": 0,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/idle/processed/idle-4.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/idle/idle-4.webp",
+          "sourceFootBaseline": 287,
+          "shiftY": 0,
+          "runtimeFootBaseline": 287
+        }
+      ]
+    },
+    "run": {
+      "frames": [
+        {
+          "source": "assets/sprites/dr_yokobo/run/processed/run-1.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/run/run-1.webp",
+          "sourceFootBaseline": 286,
+          "shiftY": 1,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/run/processed/run-2.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/run/run-2.webp",
+          "sourceFootBaseline": 286,
+          "shiftY": 1,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/run/processed/run-3.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/run/run-3.webp",
+          "sourceFootBaseline": 286,
+          "shiftY": 1,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/run/processed/run-4.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/run/run-4.webp",
+          "sourceFootBaseline": 286,
+          "shiftY": 1,
+          "runtimeFootBaseline": 287
+        }
+      ]
+    },
+    "jump": {
+      "frames": [
+        {
+          "source": "assets/sprites/dr_yokobo/jump/processed-v2/jump-1.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/jump/jump-1.webp",
+          "sourceFootBaseline": 284,
+          "shiftY": 3,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/jump/processed-v2/jump-2.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/jump/jump-2.webp",
+          "sourceFootBaseline": 284,
+          "shiftY": 3,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/jump/processed-v2/jump-3.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/jump/jump-3.webp",
+          "sourceFootBaseline": 284,
+          "shiftY": 3,
+          "runtimeFootBaseline": 287
+        },
+        {
+          "source": "assets/sprites/dr_yokobo/jump/processed-v2/jump-4.png",
+          "runtime": "assets/sprites/dr_yokobo/runtime/jump/jump-4.webp",
+          "sourceFootBaseline": 284,
+          "shiftY": 3,
+          "runtimeFootBaseline": 287
+        }
+      ]
+    }
+  }
+}

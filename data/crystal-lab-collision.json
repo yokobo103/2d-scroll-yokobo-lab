@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 2,
+  "solids": "derived-from-platform-prefabs",
+  "hazards": "derived-from-object-prefabs",
+  "killY": 1420
+}

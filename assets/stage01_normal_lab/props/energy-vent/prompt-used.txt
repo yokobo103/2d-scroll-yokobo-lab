@@ -1,0 +1,1 @@
+Create exactly one 2x2 animated energy vent sheet on solid #FF00FF. Same rounded cream/navy floor vent and bottom anchor in all cells: idle cyan, orange warning, active narrow cyan plume, cooling vapor. Clean HD Normal Lab style, fully contained, no text, UI, gothic, steampunk, snow, or ice.

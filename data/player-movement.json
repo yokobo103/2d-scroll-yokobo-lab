@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "maxRunSpeed": 430,
+  "maxSlideSpeed": 680,
+  "groundAcceleration": 2400,
+  "airAcceleration": 1250,
+  "groundFrictionBase": 0.0007,
+  "gravity": 2100,
+  "jumpVelocity": -835,
+  "jumpCutGravityMultiplier": 2.6,
+  "maxFallSpeed": 1350,
+  "coyoteTime": 0.11,
+  "jumpBufferTime": 0.12,
+  "landingStateTime": 0.08,
+  "landingTolerance": 10,
+  "cornerCorrection": 10,
+  "footInsetRatio": 0.22,
+  "slideMinSpeed": 100,
+  "slideTimerMax": 0.5,
+  "slideTimerRise": 1,
+  "slideTimerFall": 3
+}

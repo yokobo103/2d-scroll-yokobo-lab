@@ -1,0 +1,194 @@
+{
+  "playerSpawn": {
+    "x": 150,
+    "y": 572,
+    "facing": "right"
+  },
+  "actorSpawnMarkers": [
+    {
+      "id": "nyabi-clean-02-lesson-1",
+      "prefab": "nyabi-clean-v1",
+      "type": "enemy",
+      "x": 1968,
+      "y": 750,
+      "w": 146,
+      "h": 104,
+      "patrol": {
+        "minX": 1878,
+        "maxX": 2118,
+        "speed": 53.04
+      },
+      "renderOrder": 8
+    },
+    {
+      "id": "neji-nyabi-02-lesson-2",
+      "prefab": "neji-nyabi-v1",
+      "type": "enemy",
+      "x": 4368,
+      "y": 1026,
+      "w": 104,
+      "h": 108,
+      "patrol": {
+        "minX": 4278,
+        "maxX": 4518,
+        "speed": 43.68
+      },
+      "behavior": {
+        "phase": 0.4
+      },
+      "renderOrder": 8
+    },
+    {
+      "id": "nyabi-drone-01-lesson-3",
+      "prefab": "nyabi-drone-v1",
+      "type": "enemy",
+      "x": 6768,
+      "y": 1098,
+      "w": 128,
+      "h": 112,
+      "patrol": {
+        "minX": 6678,
+        "maxX": 6918,
+        "speed": 34.32
+      },
+      "laser": {
+        "mode": "moving-projectile",
+        "length": 152,
+        "height": 20,
+        "renderHeight": 82,
+        "speed": 380,
+        "travelSeconds": 1,
+        "muzzleOffsetX": 20,
+        "muzzleOffsetY": 80,
+        "period": 3.2,
+        "phase": 0.08,
+        "warningStart": 0.43,
+        "activeStart": 0.62,
+        "activeEnd": 0.72
+      },
+      "renderOrder": 8
+    },
+    {
+      "id": "nyabi-clean-04-lesson-4",
+      "prefab": "nyabi-clean-v1",
+      "type": "enemy",
+      "x": 8768,
+      "y": 1170,
+      "w": 146,
+      "h": 104,
+      "patrol": {
+        "minX": 8678,
+        "maxX": 8918,
+        "speed": 68.64
+      },
+      "renderOrder": 8
+    }
+  ],
+  "encounterTriggers": [
+    {
+      "id": "jump-hint",
+      "nearEntityId": "jump-lesson-a",
+      "radius": 220,
+      "speaker": "Dr.よこぼ",
+      "message": "跳べば越えられるかな"
+    },
+    {
+      "id": "conveyor-memory",
+      "nearEntityId": "moving-bridge-a",
+      "radius": 230,
+      "speaker": "Dr.よこぼ",
+      "message": "向きが逆だ。誰か触ったな"
+    },
+    {
+      "id": "crystal-hazard-hint",
+      "nearEntityId": "crystal-spikes-01",
+      "radius": 230,
+      "speaker": "Dr.よこぼ",
+      "message": "紫の尖りは不安定だ。触れずに跳び越えよう"
+    },
+    {
+      "id": "crystal-growth-hint",
+      "nearEntityId": "crystal-remote-switch-01",
+      "radius": 250,
+      "speaker": "Dr.よこぼ",
+      "message": "遠隔スイッチで青い結晶足場を生成できる。白濁と亀裂が入る前に渡ろう"
+    },
+    {
+      "id": "corridor-restart",
+      "nearEntityId": "corridor-ledge-a",
+      "radius": 240,
+      "speaker": "Dr.よこぼ",
+      "message": "ここから先はまだ走査していない。床の上にも何かあるな"
+    },
+    {
+      "id": "spike-garden-hint",
+      "nearEntityId": "spikes-02",
+      "radius": 240,
+      "speaker": "Dr.よこぼ",
+      "message": "また紫だ。跳んで越えるか、上の棚を回ろう"
+    },
+    {
+      "id": "relay-hint",
+      "nearEntityId": "crystal-remote-switch-02",
+      "radius": 250,
+      "speaker": "Dr.よこぼ",
+      "message": "二台目の結晶架橋装置だ。起動して上を渡ろう"
+    },
+    {
+      "id": "conveyor-yard-hint",
+      "nearEntityId": "moving-bridge-d",
+      "radius": 240,
+      "speaker": "Dr.よこぼ",
+      "message": "搬送ラインは生きている。乗り継げば上まで行けるはずだ"
+    },
+    {
+      "id": "shelf-hint",
+      "nearEntityId": "shelf-upper",
+      "radius": 260,
+      "speaker": "Dr.よこぼ",
+      "message": "標本棚の一番上だ。落ちると下の群晶が待っている"
+    },
+    {
+      "id": "gate-message",
+      "nearEntityId": "exit-switch-01",
+      "radius": 260,
+      "speaker": "Dr.よこぼ",
+      "messageType": "exit-status"
+    },
+    {
+      "id": "course-03-arrival",
+      "x": 0,
+      "y": 460,
+      "w": 720,
+      "h": 760,
+      "speaker": "Dr.よこぼ",
+      "message": "地下1400m。右側が結晶中枢区画だ。"
+    },
+    {
+      "id": "boss-placeholder",
+      "x": 9316,
+      "y": 900,
+      "w": 1200,
+      "h": 900,
+      "speaker": "SYSTEM",
+      "message": "BOSS PROTOCOL // 結晶足場をつなぎ、頭頂コアを狙え"
+    }
+  ],
+  "checkpoint": {
+    "id": "checkpoint-01",
+    "respawn": {
+      "x": 2590,
+      "y": 712
+    }
+  },
+  "cameraBounds": {
+    "x": 0,
+    "y": 0,
+    "w": 11216,
+    "h": 1560
+  },
+  "exitLink": {
+    "id": "exit-lift-01",
+    "next": "crystal-area-boss-placeholder"
+  }
+}

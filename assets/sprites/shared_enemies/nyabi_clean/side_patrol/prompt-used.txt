@@ -1,0 +1,11 @@
+Use the canonical Nyabi Clean and the current bright Normal Lab image as visual references. Create the same character, redesigned only for a true orthographic side-scrolling view.
+
+Exactly four animation frames in a clean 2x2 grid on a 100% solid flat #FF00FF background. No borders, labels, text, UI, or cell dividers.
+
+Identity lock: round white cat-eared laboratory cleaning robot; glossy black face panel with friendly cyan eye and small cat mouth; cyan top button; blue paw emblem; circular blue cleaning brushes; two visible near-side wheels; flexible silver vacuum hose trailing behind with cyan nozzle. White, navy, cyan, and soft gray materials, clean HD hand-painted 2D game sprite style matching the bright future laboratory. No gothic, steampunk, rust, snow, ice, or painterly scenery.
+
+View lock: strict orthographic left-side profile, facing screen-right in every frame. Read as a side-view vehicle, not top-down, not isometric, not three-quarter. Show almost no top surface; the wheels share one horizontal ground line and the body silhouette stays parallel to the screen plane. The face is on the right-facing front section, the hose trails toward screen-left.
+
+Motion: a seamless four-frame mechanical glide / cleaning patrol loop. Frame 1 neutral wheel contact, frame 2 front wheel and brush compression, frame 3 gentle body rise with wheel rotation, frame 4 settle. Keep the motion subtle and believable; no sliding feet, no large vertical bounce, no detached dust or speed lines.
+
+The complete subject stays centered in each invisible cell and fills only the central 60% to 68%. Same character scale and silhouette size in all frames. Stable bottom contact baseline. Nothing crosses a cell edge; leave wide magenta margin on every side.

@@ -1,0 +1,15 @@
+Create exactly one horizontal 1x4 platform-strip sprite sheet for a polished side-view 2D action game. Use the two visible game images just shown as the visual references: match the crystal laboratory's clean HD hand-painted style, dark gunmetal frames, restrained brass rivets, cyan-blue crystal energy, gothic laboratory arches, crisp silhouette and controlled cool lighting. Do not make pixel art.
+
+Use the layout guide image just shown as a layout-only reference. Use it only to understand four equal invisible wide cells, centering, spacing and safe padding. Do not reproduce the guide: no boxes, center marks, labels, borders or guide background.
+
+Cells from left to right:
+1. narrow platform left end cap, with a finished rounded outer left edge and a flat join on the right;
+2. seamless middle repeat segment, dark metal beam with a small centered cyan crystal power detail underneath;
+3. narrow platform right end cap, flat join on the left and a finished rounded outer right edge;
+4. damaged middle repeat segment, same exact dimensions and walkable top, visible cracked lower plating and a few bent hanging braces, but no hole through the walkable surface.
+
+Every segment must use the same scale and the same exact horizontal walkable top edge at the same y-position. The top edge must be visually straight and uninterrupted. Left, middle, right and damaged-middle seams must meet naturally when trimmed and placed directly adjacent. Keep all dangling underside decoration safely inside its cell. Each piece should fill about 82% of cell width and 48% of cell height, centered horizontally with a generous magenta margin above and below. No cast shadow and no floor plane.
+
+Background must be 100% solid flat #FF00FF magenta everywhere outside the four assets, with no gradient or texture. No text, labels, UI, watermark, numbers, arrows or visible grid lines. Nothing may cross a cell boundary.
+
+QC revision: preserve the first three cells. In the fourth damaged-middle cell, pull every bent brace and loose fragment farther inward so the entire silhouette has an obvious magenta margin on the left and right. No part of the fourth asset may touch a cell edge.

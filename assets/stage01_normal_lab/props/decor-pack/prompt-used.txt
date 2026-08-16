@@ -1,0 +1,1 @@
+Create exactly one 2x2 compact lab decor sprite sheet on solid #FF00FF. Row-major: rounded orange warning beacon, three-vial sample rack, wall-mounted cyan monitor panel, coiled navy service hose. Warm white/cream, navy/blue, cyan glow, restrained orange; clean HD 2D game assets; each centered with safe gutters; no text, UI, gothic, steampunk, ruins, snow, or ice.

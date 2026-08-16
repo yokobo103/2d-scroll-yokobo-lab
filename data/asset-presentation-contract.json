@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "mode": "side-scroll",
+  "camera": {
+    "gameplayAllowed": ["orthographic-side", "front-elevation"],
+    "forbiddenGameplay": ["top-down", "three-quarter", "isometric"]
+  },
+  "depthRoles": {
+    "background": { "allowedObjectTypes": ["backgroundDecor", "signal"], "maxSceneryOpacity": 1, "maxSignalOpacity": 1 },
+    "midground": { "allowedObjectTypes": ["midgroundDecor"], "requiresScrollFactor": true, "maxScrollFactor": 0.99 },
+    "gameplay": { "requiresSignal": true, "allowedSignals": ["collision", "damage", "warning", "collect", "activate", "movement"] }
+  },
+  "mountRules": {
+    "floor": { "anchors": ["floor-contact", "surface"] },
+    "wall": { "anchors": ["wall-center"] },
+    "air": { "anchors": ["world-center"], "requiresVisibleSupportOrMotion": true }
+  },
+  "signalRules": {
+    "hazard-warning": { "requiresTarget": true, "maxTargetDistance": 520 }
+  }
+}

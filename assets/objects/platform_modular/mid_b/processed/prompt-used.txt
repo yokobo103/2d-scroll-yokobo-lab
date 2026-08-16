@@ -1,0 +1,1 @@
+Use the accepted center module as exact geometry reference. Preserve outer silhouette and connection clamps; replace only the center ornament with two shallow cyan glass braces and a double-dot status lens. Solid #FF00FF background, no text.

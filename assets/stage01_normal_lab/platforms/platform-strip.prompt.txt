@@ -1,0 +1,1 @@
+Create exactly one 1x4 platform strip sprite sheet on solid #FF00FF. Cells: left cap, seamless middle A, right cap, seamless middle B. Warm white/cream rounded shell, straight navy top rim, cyan inset light, navy mechanical underside, tiny orange accent. All top edges share the same y-position. No guide lines, UI, text, gothic, steampunk, snow, or ice.

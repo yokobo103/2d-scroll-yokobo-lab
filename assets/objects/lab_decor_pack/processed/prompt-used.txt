@@ -1,0 +1,13 @@
+Create exactly one 2x2 compact environmental prop sheet for a polished side-view 2D crystal laboratory game. Use the visible crystal-lab stage reference as visual context. Match its clean HD hand-painted style, dark gunmetal, restrained brass, cyan and violet crystal accents, gothic research-apparatus shapes, crisp silhouettes and controlled cool lighting. Do not make pixel art.
+
+Use the visible 2x2 guide only for equal invisible cells, centering, spacing and safe padding. Do not reproduce the guide.
+
+Props in row-major order:
+1. compact floor-mounted amber warning lamp in a dark metal protective cage;
+2. compact rack of three small cyan and violet laboratory data bottles;
+3. compact wall control panel with abstract glowing cyan indicator shapes, no letters and no readable text;
+4. compact neatly coiled dark cable with a small crystal-powered connector.
+
+These are static non-colliding decorative props, not characters. Each prop must be a separate complete object, centered inside the central 54% of its cell with generous flat-magenta gutters. Upright objects are front-facing with only a slight visible top face, not strongly isometric. No prop, cable, glow, bottle, fragment or shadow may touch a cell edge. No floor plane or cast shadow.
+
+Background must be 100% solid flat #FF00FF magenta, no gradient or texture. No text, labels, readable letters, UI, watermark, numbers, arrows, borders or visible grid lines. Do not include platforms, floors, bridges, gates, doors, walls, hazards or other collision-critical objects.

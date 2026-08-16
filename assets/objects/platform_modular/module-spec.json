@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "displayHeight": 136,
+  "capWidth": 92,
+  "middleWidth": 216,
+  "jointOverlap": 12,
+  "assembly": [
+    "cap_left",
+    "mid_a_or_b",
+    "cap_right_mirrored"
+  ],
+  "pieceDefinitions": {
+    "cap_left": {
+      "source": "assets/objects/platform_modular/cap_left/runtime.png",
+      "widthKey": "capWidth"
+    },
+    "cap_right": {
+      "source": "assets/objects/platform_modular/cap_right/runtime.png",
+      "widthKey": "capWidth"
+    },
+    "mid_a": {
+      "source": "assets/objects/platform_modular/mid_a/runtime.png",
+      "widthKey": "middleWidth"
+    },
+    "mid_b": {
+      "source": "assets/objects/platform_modular/mid_b/runtime.png",
+      "widthKey": "middleWidth"
+    }
+  },
+  "surfaceY": 6,
+  "alphaThreshold": 128,
+  "surfaceConvention": "median first-opaque row across central 76%; data platform.y is the world contact line",
+  "normalizedPieces": {
+    "cap_left": {
+      "runtime": "assets/objects/platform_modular/normalized/cap_left.png",
+      "size": [
+        92,
+        136
+      ],
+      "sourceSurfaceYAfterResize": 5,
+      "shiftY": 1,
+      "runtimeSurfaceY": 6
+    },
+    "cap_right": {
+      "runtime": "assets/objects/platform_modular/normalized/cap_right.png",
+      "size": [
+        92,
+        136
+      ],
+      "sourceSurfaceYAfterResize": 5,
+      "shiftY": 1,
+      "runtimeSurfaceY": 6
+    },
+    "mid_a": {
+      "runtime": "assets/objects/platform_modular/normalized/mid_a.png",
+      "size": [
+        216,
+        136
+      ],
+      "sourceSurfaceYAfterResize": 5,
+      "shiftY": 1,
+      "runtimeSurfaceY": 6
+    },
+    "mid_b": {
+      "runtime": "assets/objects/platform_modular/normalized/mid_b.png",
+      "size": [
+        216,
+        136
+      ],
+      "sourceSurfaceYAfterResize": 7,
+      "shiftY": -1,
+      "runtimeSurfaceY": 6
+    }
+  }
+}

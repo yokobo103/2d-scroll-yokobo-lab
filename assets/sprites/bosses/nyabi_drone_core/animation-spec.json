@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sourceSize": 512,
+  "drawSize": 760,
+  "frameCount": 6,
+  "frameOrder": ["horizontal", "15deg", "30deg", "45deg", "60deg-warning", "60deg-firing"],
+  "laserTimingSeconds": {
+    "warning": 1.0,
+    "active": 0.72,
+    "recovery": 1.15
+  },
+  "runtimeSync": {
+    "warning": "frames 0-4",
+    "active": "frame 5",
+    "recovery": "frames 4-0 in reverse"
+  },
+  "presentation": {
+    "cameraView": "front-elevation",
+    "mount": "air",
+    "depthRole": "gameplay",
+    "semanticRole": "boss-hazard",
+    "gameplaySignal": "damage",
+    "anchor": "world-center",
+    "visibleSupportOrMotion": true,
+    "opacity": 1
+  },
+  "notes": [
+    "Both arms are baked into each full-body frame.",
+    "Runtime laser beams begin at measured muzzle coordinates for the current frame.",
+    "The rejected body/forearm part-rotation assets are no longer loaded by the runtime."
+  ]
+}

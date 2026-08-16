@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#061a35" />
+    <meta name="description" content="Dr.よこぼが結晶ラボを駆ける、縦スマホ対応2Dスクロールアクション試作。" />
+    <title>ニャビットの暴走実験室 — 結晶ラボ</title>
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="game" width="1536" height="864" aria-label="ニャビットの暴走実験室 ゲーム画面"></canvas>
+
+      <section id="loading" class="loading" aria-live="polite">
+        <div class="loading__orb"></div>
+        <p>結晶ラボを同期中…</p>
+      </section>
+
+      <header class="hud" aria-label="ゲーム情報">
+        <div class="hud__brand">
+          <span class="hud__kicker">YOKOBO AI LAB // CASE 01</span>
+          <strong>結晶ラボ</strong>
+        </div>
+        <div class="hud__meters">
+          <div class="meter meter--life"><span>DR.よこぼ</span><b id="life">● ● ●</b></div>
+          <div class="meter meter--score"><span>SCORE</span><b id="scoreCount">000000</b></div>
+          <div class="meter meter--coin"><span>COIN</span><b id="coinCount">0</b></div>
+          <div class="meter meter--data"><span>DATA</span><b><i id="crystalCount">0</i> / <i id="crystalTotal">—</i></b></div>
+          <div class="meter meter--time"><span>TIME</span><b id="timeCount">00:00.0</b></div>
+          <button id="soundButton" class="sound" type="button" aria-pressed="false">SOUND ON</button>
+        </div>
+      </header>
+
+      <aside id="mission" class="mission">
+        <span>MISSION 01</span>
+        <strong id="missionTitle">結晶データを集めて出口へ</strong>
+      </aside>
+
+      <div id="cinematic" class="cinematic" aria-live="polite">
+        <span>STAGE 01</span>
+        <strong>結晶ラボ</strong>
+        <p>暴走した研究区画へ向かえ</p>
+      </div>
+
+      <div id="toast" class="toast" aria-live="polite">
+        <strong id="toastSpeaker" class="toast__speaker" hidden></strong>
+        <span id="toastMessage" class="toast__message"></span>
+      </div>
+
+      <section id="clearPanel" class="clear-panel" aria-live="polite">
+        <span>LAB DATA SECURED</span>
+        <h1>実験ステージ クリア</h1>
+        <p class="clear-panel__next-floor">NEXT // 2F 電気室へ</p>
+        <div class="clear-panel__result">
+          <strong id="clearRank" class="clear-panel__rank">C</strong>
+          <dl class="clear-panel__stats">
+            <div><dt>DATA</dt><dd><i id="clearCrystals">0</i> / <i id="clearCrystalTotal">—</i></dd></div>
+            <div><dt>COIN</dt><dd id="clearCoins">0</dd></div>
+            <div><dt>SCORE</dt><dd id="clearScore">000000</dd></div>
+            <div><dt>TIME</dt><dd id="clearTime">00:00.0</dd></div>
+            <div><dt>MISS</dt><dd id="clearMisses">0</dd></div>
+          </dl>
+        </div>
+        <p>回収率とミス回数から今回の研究評価を算出しました。</p>
+        <button id="restartButton" type="button">もう一度走る</button>
+      </section>
+
+      <nav class="touch" aria-label="タッチ操作">
+        <div class="touch__move">
+          <button data-key="left" aria-label="左へ移動">‹</button>
+          <button data-key="right" aria-label="右へ移動">›</button>
+        </div>
+        <div class="touch__action">
+          <button id="actionButton" class="touch__action-button" data-key="action" aria-label="装置を起動" disabled>ACTION</button>
+          <button class="touch__jump" data-key="jump" aria-label="ジャンプ">JUMP</button>
+        </div>
+      </nav>
+
+      <footer class="controls">
+        <span><kbd>A</kbd><kbd>D</kbd> 移動</span>
+        <span><kbd>SPACE</kbd> ジャンプ</span>
+        <span><kbd>E</kbd> アクション</span>
+        <span><kbd>SHIFT</kbd> スライド</span>
+        <span><kbd>F2</kbd> 接地線</span>
+        <span><kbd>F3</kbd> 調整</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

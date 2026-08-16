@@ -1,0 +1,1 @@
+Clean HD side-view 3x2 sprite sheet, six-frame crystal-platform collapse. Fixed floor-nozzle anchor and top height. Sequence: healthy, dim and milky, cracked, chipped, catastrophic fragmentation, residual shards. Cyan-blue-white only on solid #FF00FF; no purple, text, UI, fire, smoke or isometric angle.

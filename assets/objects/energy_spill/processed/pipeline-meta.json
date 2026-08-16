@@ -1,0 +1,59 @@
+{
+  "target": "asset",
+  "mode": "hazard",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\objects\\energy_spill\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 320,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 640,
+  "fit_scale": 0.9,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 100,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "hazard-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1881,
+        836
+      ],
+      "component_mode": "all",
+      "component_count": 12,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        28,
+        220,
+        1845,
+        611
+      ],
+      "edge_touch": false,
+      "output_size": [
+        576,
+        123
+      ],
+      "paste_position": [
+        32,
+        486
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

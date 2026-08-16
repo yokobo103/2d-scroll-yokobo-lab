@@ -1,0 +1,59 @@
+{
+  "target": "asset",
+  "mode": "normal-lab-exit-gate",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\stage01_normal_lab\\props\\raw\\exit-gate.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 640,
+  "fit_scale": 0.9,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 240,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "gate-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1065,
+        1477
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        191,
+        232,
+        861,
+        1219
+      ],
+      "edge_touch": false,
+      "output_size": [
+        391,
+        576
+      ],
+      "paste_position": [
+        124,
+        33
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

@@ -1,0 +1,38 @@
+node_modules/
+dist/
+data/.backup/
+screenshots/
+artifacts/
+*.log
+__pycache__/
+*.py[cod]
+
+# Runtime images are WebP. Generation sources and review exports stay local.
+*.png
+*.jpg
+*.jpeg
+*.gif
+**/raw-sheet*
+**/sheet-transparent*
+**/animation.*
+
+# Non-runtime visual studies and superseded boss-part experiments.
+assets/prototypes/
+assets/map/
+assets/stage01_normal_lab/preview/
+assets/stage01_normal_lab/references/
+assets/sprites/bosses/nyabi_drone_core/parts_v1/
+assets/sprites/bosses/nyabi_drone_core/parts_v2/
+
+# Superseded WebP exports kept locally for comparison, not loaded at runtime.
+assets/stage01_normal_lab/runtime/crystal/culture-*.webp
+assets/stage01_normal_lab/runtime/crystal/nozzle-*.webp
+assets/stage01_normal_lab/runtime/crystal/remote-switch-*.webp
+assets/stage01_normal_lab/runtime/props/crystal-growth-*.webp
+assets/stage01_normal_lab/runtime/props/crystal-spikes.webp
+assets/stage01_normal_lab/runtime/props/decor-[1-4].webp
+assets/stage01_normal_lab/runtime/props/decor-side-1.webp
+assets/stage01_normal_lab/runtime/props/energy-spill.webp
+assets/stage01_normal_lab/runtime/props/exit-gate.webp
+assets/stage01_normal_lab/runtime/props/lab-info-*.webp
+assets/stage01_normal_lab/runtime/props/vent-*.webp

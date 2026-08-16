@@ -1,0 +1,11 @@
+Use the canonical Patrol Drone from Korokoro Nyabit and the current bright Normal Lab image as visual references. Preserve its identity while adapting it to a true side-view enemy called Nyabi Drone.
+
+Exactly four animation frames in a clean 2x2 grid on a 100% solid flat #FF00FF background. No borders, labels, text, UI, or cell dividers.
+
+Identity lock: rounded white cat-eared flying laboratory drone, compact spherical shell, dark navy joints, one large red camera lens on the forward face, small red warning beacon on top, red status lights, cyan hover thruster underneath. Friendly toy-like proportions but clearly an enemy. White, charcoal, navy, cyan, and warning red/orange, clean HD hand-painted 2D game sprite style matching the bright future laboratory. No gothic, steampunk, rust, snow, or ice.
+
+View lock: strict orthographic right-side profile, facing screen-left in every frame. Read as a side-view flying unit, not top-down, not isometric, not three-quarter. The red lens points screen-left. Show minimal top surface.
+
+Motion: four-frame hover-and-charge loop with body only. Frame 1 neutral hover, frame 2 slight thruster compression, frame 3 red lens brightens while body rises slightly, frame 4 warning beacon glows and body settles. Do not include a laser beam, muzzle flash, projectile, wide glow, detached sparks, or scenery; those are separate FX.
+
+The complete body stays centered in each invisible cell and fills only the central 60% to 68%. Same scale in all frames, stable bottom anchor, subtle hover bob only. Nothing crosses a cell edge; leave wide magenta margin on every side.

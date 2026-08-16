@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "alphaThreshold": 128,
+  "canvasSize": [320, 320],
+  "centerX": 160,
+  "footBaseline": 287,
+  "actions": {
+    "idle": {
+      "sourceDir": "assets/sprites/dr_yokobo/idle/processed",
+      "framePattern": "idle-*.png",
+      "durationMs": 180
+    },
+    "run": {
+      "sourceDir": "assets/sprites/dr_yokobo/run/processed",
+      "framePattern": "run-*.png",
+      "durationMs": 110
+    },
+    "jump": {
+      "sourceDir": "assets/sprites/dr_yokobo/jump/processed-v2",
+      "framePattern": "jump-*.png",
+      "durationMs": 140
+    }
+  }
+}

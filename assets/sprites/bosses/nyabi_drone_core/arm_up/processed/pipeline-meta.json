@@ -1,0 +1,249 @@
+{
+  "target": "creature",
+  "mode": "arm_up",
+  "prompt": "",
+  "role": "boss",
+  "input": "assets\\sprites\\bosses\\nyabi_drone_core\\arm_up\\raw-sheet-safe.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 160,
+  "rows": 2,
+  "cols": 3,
+  "cell_size": 512,
+  "fit_scale": 0.88,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 600,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "nyabi-drone-core-arm-up-1",
+    "nyabi-drone-core-arm-up-2",
+    "nyabi-drone-core-arm-up-3",
+    "nyabi-drone-core-arm-up-4",
+    "nyabi-drone-core-arm-up-5",
+    "nyabi-drone-core-arm-up-6"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 49598,
+      "selected_component_bbox": [
+        14,
+        133,
+        488,
+        380
+      ],
+      "crop_bbox": [
+        6,
+        125,
+        496,
+        388
+      ],
+      "edge_touch": false,
+      "output_size": [
+        448,
+        240
+      ],
+      "paste_position": [
+        32,
+        136
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 51094,
+      "selected_component_bbox": [
+        12,
+        132,
+        488,
+        381
+      ],
+      "crop_bbox": [
+        4,
+        124,
+        496,
+        389
+      ],
+      "edge_touch": false,
+      "output_size": [
+        450,
+        242
+      ],
+      "paste_position": [
+        31,
+        135
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 50788,
+      "selected_component_bbox": [
+        17,
+        135,
+        482,
+        382
+      ],
+      "crop_bbox": [
+        9,
+        127,
+        490,
+        390
+      ],
+      "edge_touch": false,
+      "output_size": [
+        440,
+        240
+      ],
+      "paste_position": [
+        36,
+        136
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 50726,
+      "selected_component_bbox": [
+        35,
+        90,
+        472,
+        366
+      ],
+      "crop_bbox": [
+        27,
+        82,
+        480,
+        374
+      ],
+      "edge_touch": false,
+      "output_size": [
+        414,
+        267
+      ],
+      "paste_position": [
+        49,
+        122
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 51222,
+      "selected_component_bbox": [
+        42,
+        84,
+        460,
+        366
+      ],
+      "crop_bbox": [
+        34,
+        76,
+        468,
+        374
+      ],
+      "edge_touch": false,
+      "output_size": [
+        397,
+        272
+      ],
+      "paste_position": [
+        57,
+        120
+      ]
+    },
+    {
+      "grid": [
+        1,
+        2
+      ],
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 51462,
+      "selected_component_bbox": [
+        41,
+        86,
+        459,
+        368
+      ],
+      "crop_bbox": [
+        33,
+        78,
+        467,
+        376
+      ],
+      "edge_touch": false,
+      "output_size": [
+        397,
+        272
+      ],
+      "paste_position": [
+        57,
+        120
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

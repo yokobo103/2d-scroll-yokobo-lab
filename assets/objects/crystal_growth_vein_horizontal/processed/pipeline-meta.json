@@ -1,0 +1,200 @@
+{
+  "target": "asset",
+  "mode": "custom_grid",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\objects\\crystal_growth_vein_horizontal\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 5,
+  "cell_size": 128,
+  "fit_scale": 0.9,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 4,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "vein-h-1",
+    "vein-h-2",
+    "vein-h-3",
+    "vein-h-4",
+    "vein-h-5"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        354,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 2,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        22,
+        501,
+        346,
+        566
+      ],
+      "edge_touch": false,
+      "output_size": [
+        107,
+        21
+      ],
+      "paste_position": [
+        10,
+        101
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        354,
+        0,
+        708,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 2,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        0,
+        420,
+        346,
+        569
+      ],
+      "edge_touch": true,
+      "output_size": [
+        115,
+        49
+      ],
+      "paste_position": [
+        6,
+        73
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        708,
+        0,
+        1062,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 2,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        0,
+        387,
+        346,
+        570
+      ],
+      "edge_touch": true,
+      "output_size": [
+        115,
+        60
+      ],
+      "paste_position": [
+        6,
+        62
+      ]
+    },
+    {
+      "grid": [
+        0,
+        3
+      ],
+      "source_box": [
+        1062,
+        0,
+        1416,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        0,
+        397,
+        334,
+        571
+      ],
+      "edge_touch": true,
+      "output_size": [
+        111,
+        57
+      ],
+      "paste_position": [
+        8,
+        65
+      ]
+    },
+    {
+      "grid": [
+        0,
+        4
+      ],
+      "source_box": [
+        1416,
+        0,
+        1770,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        6,
+        485,
+        329,
+        564
+      ],
+      "edge_touch": false,
+      "output_size": [
+        107,
+        26
+      ],
+      "paste_position": [
+        10,
+        96
+      ]
+    }
+  ],
+  "edge_touch_frames": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ]
+  ]
+}

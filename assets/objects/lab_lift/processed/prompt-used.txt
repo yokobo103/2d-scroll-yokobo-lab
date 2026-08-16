@@ -1,0 +1,1 @@
+2x1 orthographic-side laboratory descent lift sheet on exact #FF00FF. Same wide cream/navy walkable deck with visible piston supports: IDLE is locked and dim; ACTIVE has bright cyan guides, orange downward chevrons, and compact downward motion streaks. Fixed horizontal surface, dark outline, no text, scenery, perspective floor, cast shadow, or edge contact.

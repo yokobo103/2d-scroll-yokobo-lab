@@ -1,0 +1,91 @@
+{
+  "target": "asset",
+  "mode": "lab-switch",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\objects\\lab_switch\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 360,
+  "rows": 1,
+  "cols": 2,
+  "cell_size": 512,
+  "fit_scale": 0.88,
+  "trim_border": 6,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 80,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "lab-switch-1",
+    "lab-switch-2"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        116,
+        323,
+        742,
+        696
+      ],
+      "edge_touch": false,
+      "output_size": [
+        448,
+        267
+      ],
+      "paste_position": [
+        32,
+        215
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        887,
+        0,
+        1774,
+        887
+      ],
+      "component_mode": "all",
+      "component_count": 4,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        97,
+        347,
+        726,
+        693
+      ],
+      "edge_touch": false,
+      "output_size": [
+        450,
+        247
+      ],
+      "paste_position": [
+        31,
+        235
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

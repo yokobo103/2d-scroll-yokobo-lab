@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset": "warning-beacon-wall-v2",
+  "generator": "generate2dsprite",
+  "pipelineMeta": "processed/pipeline-meta.json",
+  "cameraView": "front-elevation",
+  "mount": "wall",
+  "anchorVisible": true,
+  "meaning": "hazard-warning",
+  "visualReview": {
+    "cameraAngleVerified": true,
+    "mountReadabilityVerified": true,
+    "noBakedFloorOrShadow": true
+  }
+}

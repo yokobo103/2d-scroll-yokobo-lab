@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "displayHeight": 150,
+  "capWidth": 120,
+  "middleWidth": 200,
+  "jointOverlap": 10,
+  "surfaceY": 6,
+  "pieceDefinitions": {
+    "cap_left": {
+      "runtime": "assets/objects/lab_platform_strip/normalized/cap_left.png",
+      "source": "assets/objects/lab_platform_strip/processed/lab-platform-1.png",
+      "size": [
+        120,
+        150
+      ],
+      "scale": 0.27230046948356806,
+      "runtimeSurfaceY": 6
+    },
+    "middle": {
+      "runtime": "assets/objects/lab_platform_strip/normalized/middle.png",
+      "source": "assets/objects/lab_platform_strip/processed/lab-platform-2.png",
+      "size": [
+        200,
+        150
+      ],
+      "scale": 0.3563636363636364,
+      "runtimeSurfaceY": 6
+    },
+    "cap_right": {
+      "runtime": "assets/objects/lab_platform_strip/normalized/cap_right.png",
+      "source": "assets/objects/lab_platform_strip/processed/lab-platform-3.png",
+      "size": [
+        120,
+        150
+      ],
+      "scale": 0.23673469387755103,
+      "runtimeSurfaceY": 6
+    }
+  },
+  "acceptedSourceFrames": [
+    1,
+    2,
+    3
+  ],
+  "rejectedSourceFrames": [
+    {
+      "frame": 4,
+      "reason": "edge_touch"
+    }
+  ]
+}

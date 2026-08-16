@@ -1,0 +1,9 @@
+Create a production-ready 2D side-view enemy walk animation sprite sheet for the same crystal laboratory game shown in the reference images.
+
+Exact sheet: 2 rows by 2 columns, exactly four equal invisible cells, read left-to-right then top-to-bottom. No visible grid lines, borders, labels, or text.
+
+Enemy identity: a small patrol "slime robot", about knee-high beside Dr. Yokobo. Low rounded squishy slime-like metallic body, dark navy and gunmetal shell, glossy black face screen with two bright cyan expressive eyes, tiny amber warning light, two short mechanical feet or compact tread-pods. Cute but clearly hazardous. It must not look like the cat drone or player character. Match the clean hand-painted HD 2D game art, ornate crystal-lab metal materials, cyan and violet accent lighting, crisp silhouette, controlled detail, no pixel art.
+
+Four-frame grounded patrol walk loop: neutral compressed stance; body leans forward and left tread advances; body rises with a subtle elastic slime bounce; right tread advances and returns toward neutral. Same exact robot identity, body size, bounding box, and pixel scale in every cell. Side view facing right in every frame. Full body centered in the central 60-65% of each cell. Stable bottom/feet anchor line in all four cells. Entire robot fully contained with generous margin on every side. No detached effects.
+
+Background must be 100% solid flat #FF00FF magenta with no gradient or texture. No text, no UI, no scenery, no platform, no ground plane.

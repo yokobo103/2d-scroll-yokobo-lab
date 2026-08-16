@@ -1,0 +1,155 @@
+{
+  "target": "asset",
+  "mode": "energy-vent",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\objects\\energy_vent\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 320,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 512,
+  "fit_scale": 0.84,
+  "trim_border": 8,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 10,
+  "min_component_area": 100,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "energy-vent-1",
+    "energy-vent-2",
+    "energy-vent-3",
+    "energy-vent-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        120,
+        281,
+        516,
+        537
+      ],
+      "edge_touch": false,
+      "output_size": [
+        430,
+        278
+      ],
+      "paste_position": [
+        41,
+        194
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 5,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        90,
+        216,
+        485,
+        537
+      ],
+      "edge_touch": false,
+      "output_size": [
+        428,
+        348
+      ],
+      "paste_position": [
+        42,
+        124
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 4,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        121,
+        92,
+        515,
+        461
+      ],
+      "edge_touch": false,
+      "output_size": [
+        427,
+        400
+      ],
+      "paste_position": [
+        42,
+        72
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 4,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        90,
+        162,
+        484,
+        461
+      ],
+      "edge_touch": false,
+      "output_size": [
+        427,
+        324
+      ],
+      "paste_position": [
+        42,
+        148
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

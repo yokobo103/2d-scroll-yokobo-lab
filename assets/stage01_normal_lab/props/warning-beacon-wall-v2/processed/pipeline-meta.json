@@ -1,0 +1,59 @@
+{
+  "target": "asset",
+  "mode": "normal-lab-warning-wall-v2",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\stage01_normal_lab\\props\\warning-beacon-wall-v2\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 1,
+  "cols": 1,
+  "cell_size": 512,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": false,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 240,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "warning-wall-1"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        283,
+        276,
+        963,
+        942
+      ],
+      "edge_touch": false,
+      "output_size": [
+        419,
+        411
+      ],
+      "paste_position": [
+        46,
+        50
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

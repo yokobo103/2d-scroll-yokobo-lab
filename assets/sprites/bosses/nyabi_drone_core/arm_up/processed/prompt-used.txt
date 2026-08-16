@@ -1,0 +1,4 @@
+Authoritative reference: user-provided front-elevation Nyabi Drone Core boss image.
+Layout: exact 2x3 grid, reading left-to-right then top-to-bottom.
+Frames: horizontal, +15°, +30°, +45°, +60° warning glow, +60° firing charge.
+Both arms rotate symmetrically upward. Preserve the full boss identity, scale, body center, armor, ears, central lens, siren and thruster. Only arm angles and final muzzle glow change. No laser beam in the sprite. Solid #FF00FF background, no text, no crop, no edge crossing.

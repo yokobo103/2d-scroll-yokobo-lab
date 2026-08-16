@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "hop",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\sprites\\shared_enemies\\neji_nyabi\\hop\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 130,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 320,
+  "fit_scale": 0.8,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 0,
+  "min_component_area": 18,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "neji-nyabi-1",
+    "neji-nyabi-2",
+    "neji-nyabi-3",
+    "neji-nyabi-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        85,
+        81,
+        418,
+        423
+      ],
+      "edge_touch": false,
+      "output_size": [
+        180,
+        185
+      ],
+      "paste_position": [
+        70,
+        104
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "component_mode": "all",
+      "component_count": 7,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        86,
+        36,
+        418,
+        468
+      ],
+      "edge_touch": false,
+      "output_size": [
+        180,
+        234
+      ],
+      "paste_position": [
+        70,
+        55
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "component_mode": "all",
+      "component_count": 7,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        85,
+        16,
+        418,
+        487
+      ],
+      "edge_touch": false,
+      "output_size": [
+        180,
+        256
+      ],
+      "paste_position": [
+        70,
+        33
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        85,
+        82,
+        418,
+        422
+      ],
+      "edge_touch": false,
+      "output_size": [
+        180,
+        184
+      ],
+      "paste_position": [
+        70,
+        105
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

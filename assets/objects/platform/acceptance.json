@@ -1,0 +1,10 @@
+{
+  "accepted": [
+    { "frame": "processed/platform-1.png", "edgeTouch": false, "runtime": "runtime.png" }
+  ],
+  "rejected": [
+    { "frame": "processed/platform-2.png", "reason": "source touched the center cell edge" },
+    { "frame": "processed/platform-3.png", "reason": "not needed after reclassification to one repeatable platform object" }
+  ],
+  "strategy": "one_by_one runtime platform object"
+}

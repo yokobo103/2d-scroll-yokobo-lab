@@ -1,0 +1,7 @@
+Reuse the canonical Neji Nyabi design from Korokoro Nyabit without redesigning the character.
+
+Identity lock: compact silver cat-eared screw robot, segmented metal shell, black face screen with orange determined eyes and cat mouth, orange ear inserts and cuffs, screw-head side caps, spring-and-drill lower body. Silver, charcoal, and warning-orange palette with rounded toy-like proportions. No gothic, steampunk, rust, snow, or ice motifs.
+
+Action: four-frame periodic hop loop for a friendly bright future laboratory: crouch, rise, airborne extension, landing. Preserve the source 2x2 frame order and silhouette. Keep the grounded contact baseline stable in grounded frames and the jump height readable.
+
+Runtime adaptation: clean transparent RGBA frames, centered and bottom-aligned, equal scale, no clipping or edge contact. Intended for a side-scrolling browser game at approximately 170 px display size.

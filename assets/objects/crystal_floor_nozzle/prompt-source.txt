@@ -1,0 +1,5 @@
+Reference: attached "AIラボ式 横向きクリスタル足場アセット設計" sheet.
+
+Create a production-ready 2D side-scroller animated prop sheet for a new floor-embedded crystal generation nozzle. Strict orthographic side elevation. Compact, wide, low-profile machine recessed into the floor, with rounded white/cream armor, navy mechanics, cyan status slit, orange fasteners, and a central upward-facing emitter. Perfectly horizontal shared floor-contact baseline. No tank, glass cylinder, button, paw symbol, monitor, text, top-down view, or isometric view.
+
+Exactly 2x2: idle closed; priming with tiny nucleus; active with narrow cyan crystal core; cooldown with tightly grouped fragments. Same identity, scale, baseline, and bounding box. Clean hand-painted HD bright future-lab style. Solid flat #FF00FF background, no grid or labels.

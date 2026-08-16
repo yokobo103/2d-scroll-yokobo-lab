@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "courseLength": 11216,
+  "courseDrop": 640,
+  "courseVerticalOffset": 1200,
+  "world": { "width": 33648, "height": 4200 },
+  "killY": 4120,
+  "bossArenaLayout": {
+    "groundY": 1274,
+    "firstFloorRise": 320,
+    "tierRise": 244,
+    "lowerStepRise": 160,
+    "interTierStepRise": 122,
+    "switchHeight": 140,
+    "nozzleHeight": 168,
+    "jumpSafetyMargin": 5,
+    "bossHeadReachBelowFloor": 140,
+    "bossVerticalAmplitude": 22,
+    "floorX": {
+      "left": [9240, 9360, 9440],
+      "right": [10440, 10360, 10160]
+    },
+    "deviceOffsets": {
+      "leftNozzle": 0,
+      "leftSwitch": 136,
+      "rightSwitch": -18,
+      "rightNozzle": 70
+    }
+  },
+  "courses": [
+    {
+      "id": "course-01-tutorial",
+      "number": 1,
+      "label": "基礎実験区画",
+      "mission": "敵の特徴を順番に確認しよう",
+      "xStart": 0,
+      "xEnd": 11216,
+      "depthMeters": 120,
+      "atmosphere": { "tint": "#e7f8ff", "alpha": 0.02, "light": 1.0 }
+    },
+    {
+      "id": "course-02-crystal-lab",
+      "number": 2,
+      "label": "結晶実験区画",
+      "mission": "結晶データを集めて下層へ",
+      "xStart": 11216,
+      "xEnd": 22432,
+      "depthMeters": 760,
+      "atmosphere": { "tint": "#0b5e91", "alpha": 0.07, "light": 0.93 }
+    },
+    {
+      "id": "course-03-boss-arena",
+      "number": 3,
+      "label": "結晶中枢区画",
+      "mission": "最深部の反応源へ向かおう",
+      "xStart": 22432,
+      "xEnd": 33648,
+      "depthMeters": 1400,
+      "atmosphere": { "tint": "#15125f", "alpha": 0.14, "light": 0.84 },
+      "boss": { "status": "prototype", "encounterId": "nyabi-drone-core", "hits": 3 }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "nyabbit-rampage-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:lan": "vite --host",
+    "build": "vite build && node tools/copy_runtime_assets.mjs",
+    "preview": "vite preview",
+    "assets:normalize": "node tools/run_python.mjs tools/normalize_contact_assets.py",
+    "assets:crystals": "node tools/run_python.mjs tools/prepare_crystal_assets.py",
+    "catalog:silhouette": "node tools/run_python.mjs tools/build_floor_silhouette_sheet.py --floor 1f",
+    "catalog:devices": "node tools/run_python.mjs tools/build_floor_device_silhouettes.py",
+    "validate:contact": "node tools/run_python.mjs tools/validate_contact_contract.py",
+    "validate:stage": "node tools/validate_stage_data.mjs",
+    "validate:course": "node tools/audit_course.mjs",
+    "validate:enemy": "node tools/validate_enemy_controller.mjs",
+    "validate:item": "node tools/validate_item_controller.mjs",
+    "validate:audio": "node tools/validate_audio_context.mjs",
+    "validate:loading": "node tools/validate_loading_error.mjs",
+    "validate:catalog": "node tools/validate_catalog.mjs",
+    "validate:presentation": "node tools/audit_asset_presentation.mjs",
+    "validate:movement": "node tools/validate_player_controller.mjs",
+    "validate:growth": "node tools/validate_crystal_growth.mjs",
+    "validate:camera": "node tools/validate_camera_controller.mjs",
+    "validate:damage": "node tools/validate_damage_model.mjs",
+    "validate:action": "node tools/validate_action_interaction.mjs",
+    "validate:input-release": "node tools/validate_input_release.mjs",
+    "validate:runtime-images": "node tools/validate_runtime_image_formats.mjs",
+    "validate:courses": "node tools/validate_course_layout.mjs",
+    "validate:reach": "node tools/validate_reach_envelope.mjs",
+    "validate:editor-mobile": "node tools/validate_mobile_editor.mjs",
+    "validate:boss": "node tools/validate_boss_controller.mjs",
+    "validate:boss-sprites": "node tools/run_python.mjs tools/validate_boss_sprite_sheets.py",
+    "validate:build": "node tools/validate_build_output.mjs",
+    "validate": "npm run validate:contact && npm run validate:stage && npm run validate:course && npm run validate:courses && npm run validate:reach && npm run validate:editor-mobile && npm run validate:boss && npm run validate:boss-sprites && npm run validate:movement && npm run validate:growth && npm run validate:camera && npm run validate:damage && npm run validate:action && npm run validate:input-release && npm run validate:runtime-images && npm run validate:enemy && npm run validate:item && npm run validate:audio && npm run validate:loading && npm run validate:presentation && npm run validate:catalog && npm run validate:build"
+  },
+  "devDependencies": {
+    "vite": "^7.1.1"
+  }
+}

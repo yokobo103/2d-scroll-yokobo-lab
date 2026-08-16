@@ -1,0 +1,91 @@
+{
+  "target": "asset",
+  "mode": "lab-lift",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\objects\\lab_lift\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 360,
+  "rows": 1,
+  "cols": 2,
+  "cell_size": 512,
+  "fit_scale": 0.92,
+  "trim_border": 6,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 80,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "lab-lift-1",
+    "lab-lift-2"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        836,
+        941
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        85,
+        357,
+        761,
+        619
+      ],
+      "edge_touch": false,
+      "output_size": [
+        470,
+        182
+      ],
+      "paste_position": [
+        21,
+        310
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        836,
+        0,
+        1672,
+        941
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        60,
+        357,
+        737,
+        619
+      ],
+      "edge_touch": false,
+      "output_size": [
+        471,
+        182
+      ],
+      "paste_position": [
+        20,
+        310
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

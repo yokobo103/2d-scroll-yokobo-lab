@@ -1,0 +1,5 @@
+Reference: attached "AIラボ式 横向きクリスタル足場アセット設計" sheet.
+
+Create a production-ready 2D side-scroller animated prop sheet for a compact remote wireless crystal switch. Strict orthographic side elevation. Small floor-standing pedestal with rounded white/cream armor, navy base, cyan signal window, compact circular cyan crystal button, and orange fasteners. Perfectly horizontal shared floor-contact baseline. It controls multiple remote crystal nozzles. No tank, nozzle, monitor, elevator paw button, text, top-down view, or isometric view.
+
+Exactly 2x2: idle; pressed/transmitting with two compact arcs; linked active with three compact arcs; cooldown with one fading arc. Same identity, scale, baseline, and bounding box. Clean hand-painted HD bright future-lab style. Solid flat #FF00FF background, no grid or labels.

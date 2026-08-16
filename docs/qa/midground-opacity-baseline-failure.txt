@@ -1,0 +1,14 @@
+Command: npm run validate:presentation
+Intentional temporary change: lab-bottle-rack-v1 presentation.opacity 1 -> 0.5
+Exit code: 1
+
+Presentation audit: crystal-lab-stage-01
+Used visual prefabs: 23
+Semantic signals: 3
+Background decorations: 0
+Midground decorations: 7
+
+ASSET PRESENTATION AUDIT FAILED
+- lab-bottle-rack-v1: visible prefab opacity must be 1 (received 0.5)
+
+The temporary change was reverted immediately after this proof was captured.

@@ -1,0 +1,1 @@
+Create a transparent-ready near parallax plate on solid #FF00FF: sparse rounded navy pipes, cream couplers, cyan service glass, and small monitor housings confined to the extreme sides and upper corners. Keep the central 60% and lower half open. No walkable geometry or gameplay objects.

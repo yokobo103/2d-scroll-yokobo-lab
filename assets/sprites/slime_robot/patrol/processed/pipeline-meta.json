@@ -1,0 +1,175 @@
+{
+  "target": "creature",
+  "mode": "patrol",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\sprites\\slime_robot\\patrol\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 110,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 320,
+  "fit_scale": 0.82,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "feet",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 8,
+  "min_component_area": 1,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "patrol-1",
+    "patrol-2",
+    "patrol-3",
+    "patrol-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 97549,
+      "selected_component_bbox": [
+        123,
+        172,
+        508,
+        521
+      ],
+      "crop_bbox": [
+        115,
+        164,
+        516,
+        529
+      ],
+      "edge_touch": false,
+      "output_size": [
+        243,
+        221
+      ],
+      "paste_position": [
+        38,
+        71
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 94949,
+      "selected_component_bbox": [
+        91,
+        193,
+        507,
+        522
+      ],
+      "crop_bbox": [
+        83,
+        185,
+        515,
+        530
+      ],
+      "edge_touch": false,
+      "output_size": [
+        262,
+        209
+      ],
+      "paste_position": [
+        29,
+        83
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 101700,
+      "selected_component_bbox": [
+        133,
+        77,
+        507,
+        484
+      ],
+      "crop_bbox": [
+        125,
+        69,
+        515,
+        492
+      ],
+      "edge_touch": false,
+      "output_size": [
+        236,
+        256
+      ],
+      "paste_position": [
+        42,
+        36
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 93489,
+      "selected_component_bbox": [
+        90,
+        155,
+        493,
+        488
+      ],
+      "crop_bbox": [
+        82,
+        147,
+        501,
+        496
+      ],
+      "edge_touch": false,
+      "output_size": [
+        254,
+        211
+      ],
+      "paste_position": [
+        33,
+        81
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

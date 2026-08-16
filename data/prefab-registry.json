@@ -1,0 +1,581 @@
+{
+  "version": 1,
+  "registryId": "crystal-lab-prefabs-v1",
+  "prefabs": {
+    "lab-platform-v1": {
+      "category": "platform",
+      "lore": "実験区画を区切る床パネル。装置の搬入に合わせて幅を変えられる規格品",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "collision", "anchor": "surface", "opacity": 1 },
+      "visualContract": "lab-floor-v1",
+      "editor": {
+        "allowed": ["x", "y", "modules", "pattern"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 1, "max": 12 },
+        "pattern": "^[AB]+$",
+        "patternLengthMustEqualModules": true
+      },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24
+      }
+    },
+    "lab-bridge-v1": {
+      "category": "platform",
+      "lore": "区画をまたぐ点検用の渡り板。人ひとりが通る幅しかない",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "collision", "anchor": "surface", "opacity": 1 },
+      "visualContract": "lab-bridge-strip-v1",
+      "visualSet": "lab-strip",
+      "layout": {
+        "displayHeight": 150,
+        "capWidth": 120,
+        "middleWidth": 200,
+        "jointOverlap": 10,
+        "surfaceY": 6
+      },
+      "editor": {
+        "allowed": ["x", "y", "modules", "pattern"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 1, "max": 8 },
+        "pattern": "^[AB]+$",
+        "patternLengthMustEqualModules": true
+      },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24
+      }
+    },
+    "lab-bridge-short-v1": {
+      "category": "platform",
+      "lore": "通常の点検用渡り板の約半幅。左右端パーツだけで構成する短い足場",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "collision", "anchor": "surface", "opacity": 1 },
+      "visualContract": "lab-bridge-strip-v1",
+      "visualSet": "lab-strip",
+      "layout": {
+        "displayHeight": 150,
+        "capWidth": 120,
+        "middleWidth": 200,
+        "jointOverlap": 10,
+        "surfaceY": 6
+      },
+      "defaults": { "modules": 0, "pattern": "" },
+      "editor": {
+        "allowed": ["x", "y"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 0, "max": 0 },
+        "pattern": "^$",
+        "patternLengthMustEqualModules": true
+      },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24
+      }
+    },
+    "lab-moving-platform-v1": {
+      "category": "platform",
+      "lore": "試料を運ぶ搬送台。決められた区間を往復し続ける",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "movement", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "visualContract": "lab-bridge-strip-v1",
+      "visualSet": "lab-strip",
+      "layout": {
+        "displayHeight": 150,
+        "capWidth": 120,
+        "middleWidth": 200,
+        "jointOverlap": 10,
+        "surfaceY": 6
+      },
+      "editor": {
+        "allowed": ["x", "y", "modules", "pattern", "motionAxis", "motionDistance", "motionPeriod", "motionPhase"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 1, "max": 4 },
+        "pattern": "^[AB]+$",
+        "patternLengthMustEqualModules": true,
+        "motionAxis": ["x", "y"],
+        "motionDistance": { "min": -320, "max": 320 },
+        "motionPeriod": { "min": 1.2, "max": 12 },
+        "motionPhase": { "min": 0, "max": 1 }
+      },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24,
+        "moving": true
+      }
+    },
+    "lab-lift-v1": {
+      "category": "platform",
+      "lore": "階層間を移動する正規の昇降機。呼び出しボタンで作動する",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "activate", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "visualSet": "lab-lift",
+      "layout": {
+        "displayHeight": 140,
+        "capWidth": 0,
+        "middleWidth": 364,
+        "jointOverlap": 0,
+        "surfaceY": 0
+      },
+      "editor": {
+        "allowed": ["x", "y"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 1, "max": 1 },
+        "pattern": "^A$",
+        "patternLengthMustEqualModules": true,
+        "motionAxis": ["y"],
+        "motionDistance": { "min": 120, "max": 840 },
+        "motionDuration": { "min": 1.5, "max": 6 },
+        "activationDelay": { "min": 0, "max": 2 },
+        "length": { "min": 2, "max": 16 },
+        "growthSpeed": { "min": 0.08, "max": 0.15 },
+        "activeDuration": { "min": 1, "max": 20 },
+        "collapseDuration": { "min": 1, "max": 8 },
+        "segmentSpacing": { "min": 24, "max": 96 }
+      },
+      "activation": { "mode": "one-shot", "requires": "activatedBy" },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24,
+        "moving": true
+      }
+    },
+    "crystal-growth-horizontal-v1": {
+      "category": "platform",
+      "lore": "結晶培養装置から横方向へ成長し、離れた足場をつなぐ人工結晶。起動後は安定して歩ける",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "activate", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1,
+        "sourcePngs": [
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-1.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-2.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-3.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-4.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-5.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-growth-6.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-1.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-2.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-3.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-4.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-5.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/inverted-core-collapse-6.webp"
+        ]
+      },
+      "visualSet": "crystal-inverted-core-platform",
+      "layout": {
+        "displayHeight": 112,
+        "capWidth": 0,
+        "middleWidth": 116,
+        "jointOverlap": 0,
+        "surfaceY": 0
+      },
+      "editor": {
+        "allowed": ["x", "y", "direction", "length", "growthSpeed", "activeDuration", "collapseDuration", "segmentSpacing"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 1, "max": 1 },
+        "pattern": "^A$",
+        "patternLengthMustEqualModules": true,
+        "activationDelay": { "min": 0, "max": 2 },
+        "length": { "min": 2, "max": 16 },
+        "growthSpeed": { "min": 0.08, "max": 0.15 },
+        "activeDuration": { "min": 1, "max": 20 },
+        "collapseDuration": { "min": 1, "max": 8 },
+        "segmentSpacing": { "min": 24, "max": 96 }
+      },
+      "activation": { "mode": "growth", "requires": "activatedBy", "direction": "right", "length": 6, "growthSpeed": 0.11, "activeDuration": 6.5, "collapseDuration": 3.2, "segmentSpacing": 60, "emergenceDuration": 0.16 },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24,
+        "dynamicGrowth": true
+      }
+    },
+    "crystal-growth-vertical-v1": {
+      "category": "platform",
+      "lore": "結晶培養装置から上方向へ成長する人工結晶。先端の安定板が足場になり、乗ったまま上昇できる",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "walkable", "gameplaySignal": "activate", "anchor": "surface", "opacity": 1,
+        "sourcePngs": [
+          "/assets/stage01_normal_lab/runtime/crystal/cluster-v-1.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/cluster-v-2.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/cluster-v-3.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/cluster-v-4.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/cluster-v-5.webp"
+        ]
+      },
+      "visualSet": "crystal-growth-vertical",
+      "layout": {
+        "displayHeight": 320,
+        "capWidth": 0,
+        "middleWidth": 116,
+        "jointOverlap": 0,
+        "surfaceY": 0
+      },
+      "editor": {
+        "allowed": ["x", "y", "direction", "length", "growthSpeed", "activeDuration", "collapseDuration", "segmentSpacing"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "constraints": {
+        "modules": { "min": 1, "max": 1 },
+        "pattern": "^A$",
+        "patternLengthMustEqualModules": true,
+        "activationDelay": { "min": 0, "max": 2 }
+      },
+      "activation": { "mode": "growth", "requires": "activatedBy", "direction": "up", "length": 4, "growthSpeed": 0.12, "activeDuration": 8.5, "collapseDuration": 3.2, "segmentSpacing": 51, "emergenceDuration": 0.17 },
+      "collision": {
+        "factory": "oneWayRect",
+        "surfaceLocked": true,
+        "depth": 24,
+        "moving": true,
+        "dynamicGrowth": true
+      }
+    },
+    "data-crystal-v1": {
+      "category": "pickup",
+      "lore": "実験記録を保存した結晶メモリ。暴走時に装置から弾き出され、各所に散っている",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "reward", "gameplaySignal": "collect", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "editor": {
+        "allowed": ["x", "y"],
+        "snap": 1,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": { "factory": "sensorCircle", "radius": 78 }
+    },
+    "lab-coin-v1": {
+      "category": "pickup",
+      "lore": "研究予算の管理に使う実験クレジット",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "reward", "gameplaySignal": "collect", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "displayName": "ラボコイン",
+      "visualSet": "korokoro-lab-coin",
+      "itemEffect": { "type": "score", "value": 100 },
+      "editor": { "allowed": ["x", "y"], "snap": 1, "allowScale": false, "allowRotation": false },
+      "collision": { "factory": "sensorCircle", "radius": 62 }
+    },
+    "cat-can-v1": {
+      "category": "pickup",
+      "lore": "研究員用の非常食。ひとつ食べると持ち直す",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "reward", "gameplaySignal": "collect", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "displayName": "ネコ缶",
+      "visualSet": "korokoro-cat-can",
+      "itemEffect": { "type": "heal", "value": 1 },
+      "editor": { "allowed": ["x", "y"], "snap": 1, "allowScale": false, "allowRotation": false },
+      "collision": { "factory": "sensorCircle", "radius": 62 }
+    },
+    "fish-drink-v1": {
+      "category": "pickup",
+      "lore": "検査後の補給用ドリンク。飲むと全快し、しばらく防護が効く",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "reward", "gameplaySignal": "collect", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "displayName": "フィッシュドリンク",
+      "visualSet": "korokoro-fish-drink",
+      "itemEffect": { "type": "fullHeal", "shieldSeconds": 5 },
+      "editor": { "allowed": ["x", "y"], "snap": 1, "allowScale": false, "allowRotation": false },
+      "collision": { "factory": "sensorCircle", "radius": 68 }
+    },
+    "future-heart-v1": {
+      "category": "pickup",
+      "lore": "試作段階の生命維持コア。取り込むと体力の上限そのものが上がる",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "reward", "gameplaySignal": "collect", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "displayName": "未来ハート",
+      "visualSet": "korokoro-future-heart",
+      "itemEffect": { "type": "extraLife", "value": 1, "maxLivesCap": 5 },
+      "editor": { "allowed": ["x", "y"], "snap": 1, "allowScale": false, "allowRotation": false },
+      "collision": { "factory": "sensorCircle", "radius": 74 }
+    },
+    "nyabi-clean-v1": {
+      "category": "actor",
+      "lore": "床の清掃を担当する自走ロボ。停止命令を受け付けなくなり、通路を往復し続けている",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "actor", "gameplaySignal": "damage", "anchor": "floor-contact", "opacity": 1 },
+      "displayName": "ニャビクリーン",
+      "visualSet": "nyabi-clean-side-patrol",
+      "behavior": { "preset": "patrol" },
+      "render": {
+        "drawSize": 202,
+        "baseline": 0.9125,
+        "glow": "rgba(55, 220, 255, .38)",
+        "shadowBlur": 15
+      },
+      "editor": {
+        "allowed": ["x", "y", "patrol"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": {
+        "factory": "enemyRect",
+        "insetX": 14,
+        "insetY": 16,
+        "stompBounce": -500,
+        "damage": 1
+      }
+    },
+    "neji-nyabi-v1": {
+      "category": "actor",
+      "lore": "装置の締め付けを点検する整備ロボ。跳ねながら移動する癖が、暴走で止まらなくなった",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "actor", "gameplaySignal": "damage", "anchor": "floor-contact", "opacity": 1 },
+      "displayName": "ネジニャビ",
+      "visualSet": "neji-nyabi-hop",
+      "behavior": {
+        "preset": "jump",
+        "interval": 2.4,
+        "duration": 0.78,
+        "height": 70
+      },
+      "render": {
+        "drawSize": 176,
+        "baseline": 0.9125,
+        "glow": "rgba(255, 145, 45, .34)",
+        "shadowBlur": 14
+      },
+      "editor": {
+        "allowed": ["x", "y", "patrol", "behavior"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": {
+        "factory": "enemyRect",
+        "insetX": 14,
+        "insetY": 14,
+        "stompBounce": -500,
+        "damage": 1
+      }
+    },
+    "nyabi-drone-v1": {
+      "category": "actor",
+      "lore": "高所の観測を担当する飛行ロボ。測距用のレーザーが出力固定のまま撃たれ続けている",
+      "presentation": { "cameraView": "orthographic-side", "mount": "air", "depthRole": "gameplay", "semanticRole": "actor", "gameplaySignal": "damage", "anchor": "world-center", "visibleSupportOrMotion": true, "opacity": 1 },
+      "displayName": "ニャビドローン",
+      "visualSet": "nyabi-drone-hover-charge",
+      "behavior": {
+        "preset": "hover_laser",
+        "bobHeight": 8,
+        "bobSpeed": 2.15
+      },
+      "render": {
+        "drawSize": 156,
+        "baseline": 0.86,
+        "sourceFacing": -1,
+        "glow": "rgba(255, 82, 61, .38)",
+        "shadowBlur": 16
+      },
+      "editor": {
+        "allowed": ["x", "y", "patrol", "laser"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": {
+        "factory": "enemyRect",
+        "insetX": 18,
+        "insetY": 16,
+        "stompBounce": -500,
+        "damage": 1
+      }
+    },
+    "energy-spill-v1": {
+      "category": "object",
+      "lore": "搬送装置からこぼれた試料が床に溜まったもの。装置の副産物として近傍にだけ現れ、触れると熱い",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "hazard", "gameplaySignal": "damage", "anchor": "floor-contact", "opacity": 1,
+        "hazardVisual": {
+          "dangerHue": "orange-red", "hasDarkOutline": true, "hasFloorWarningBand": true, "stateColorShift": true
+        }
+      },
+      "editor": {
+        "allowed": ["x", "y"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": {
+        "factory": "hazardRect",
+        "offsetX": 22,
+        "offsetY": 30,
+        "width": 166,
+        "height": 62,
+        "damage": 1
+      }
+    },
+    "crystal-spikes-v1": {
+      "category": "object",
+      "lore": "結晶培養中に床へ析出した不安定な紫結晶。鋭い先端に触れるとダメージを受ける",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "hazard", "gameplaySignal": "damage", "anchor": "floor-contact", "opacity": 1,
+        "hazardVisual": {
+          "dangerHue": "purple", "hasDarkOutline": true, "hasFloorWarningBand": false, "stateColorShift": false,
+          "sourcePngs": [
+            "/assets/stage01_normal_lab/runtime/crystal/hazard-massive-1.webp",
+            "/assets/stage01_normal_lab/runtime/crystal/hazard-massive-2.webp",
+            "/assets/stage01_normal_lab/runtime/crystal/hazard-massive-3.webp",
+            "/assets/stage01_normal_lab/runtime/crystal/hazard-massive-4.webp",
+            "/assets/stage01_normal_lab/runtime/crystal/hazard-massive-5.webp"
+          ]
+        }
+      },
+      "visualSet": "crystal-spikes",
+      "moduleLayout": { "width": 66, "overlap": 7, "sourceFloorRatio": 0.9296875 },
+      "editor": {
+        "allowed": ["x", "y", "modules"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": {
+        "factory": "hazardRect",
+        "offsetX": 14,
+        "offsetY": 30,
+        "widthFromEntity": true,
+        "insetRight": 14,
+        "height": 64,
+        "damage": 1
+      }
+    },
+    "energy-vent-v1": {
+      "category": "object",
+      "lore": "試料を急速加熱する加熱炉の排気口。制御が落ち、閉じきらない弁から周期的に高温が漏れる",
+      "availability": "deferred-2f-5f-with-visible-supply-system",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "hazard", "gameplaySignal": "damage", "anchor": "floor-contact", "opacity": 1,
+        "hazardVisual": { "requiresVisibleSupplySystem": true, "warningFrame": 1, "activeFrame": 2 }
+      },
+      "visualSet": "energy-vent",
+      "editor": {
+        "allowed": ["x", "y", "period", "phase"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": {
+        "factory": "timedHazardRect",
+        "offsetX": 58,
+        "offsetY": 10,
+        "width": 64,
+        "height": 174,
+        "damage": 1,
+        "warningStart": 0.34,
+        "activeStart": 0.5,
+        "activeEnd": 0.76
+      }
+    },
+    "lab-warning-lamp-v1": {
+      "category": "object",
+      "lore": "異常を検知した装置に連動して回る警告灯。対象が正常なら消灯している",
+      "presentation": { "cameraView": "front-elevation", "mount": "wall", "depthRole": "gameplay", "semanticRole": "hazard-warning", "gameplaySignal": "warning", "anchor": "wall-center", "opacity": 1, "requiresSignalTarget": true },
+      "visualSet": "lab-decor-1",
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false }
+    },
+    "crystal-remote-switch-v1": {
+      "category": "object",
+      "lore": "発光液の中で結晶核を培養し、押しボタンで成長方向へ析出を始める小型装置。",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "interactable", "gameplaySignal": "activate", "anchor": "floor-contact", "opacity": 1, "requiresActivationTarget": true,
+        "sourcePngs": [
+          "/assets/stage01_normal_lab/runtime/crystal/remote-switch-1.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/remote-switch-2.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/remote-switch-3.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/remote-switch-4.webp"
+        ]
+      },
+      "visualSet": "crystal-remote-switch",
+      "interaction": {
+        "mode": "action",
+        "rangeX": 190,
+        "rangeY": 180,
+        "readySignal": "white-glow"
+      },
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false },
+      "collision": { "factory": "sensorRect", "insetX": 24, "insetTop": 72, "insetBottom": 0 }
+    },
+    "crystal-growth-nozzle-v1": {
+      "category": "object",
+      "lore": "Floor-embedded crystal emitter nozzle remotely linked to one temporary walkable crystal platform.",
+      "presentation": {
+        "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "interactable", "gameplaySignal": "activate", "anchor": "floor-contact", "opacity": 1, "requiresActivationTarget": true,
+        "sourcePngs": [
+          "/assets/stage01_normal_lab/runtime/crystal/nozzle-1.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/nozzle-2.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/nozzle-3.webp",
+          "/assets/stage01_normal_lab/runtime/crystal/nozzle-4.webp"
+        ]
+      },
+      "visualSet": "crystal-growth-nozzle",
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false }
+    },
+    "lab-switch-v1": {
+      "category": "object",
+      "lore": "装置を手動で起動する操作盤。自動制御が落ちた区画ではこれで動かす",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "interactable", "gameplaySignal": "activate", "anchor": "floor-contact", "opacity": 1, "requiresActivationTarget": true },
+      "visualSet": "lab-switch",
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false },
+      "collision": { "factory": "sensorRect" }
+    },
+    "lab-bottle-rack-v1": {
+      "category": "object",
+      "lore": "実験用試薬を並べる棚。壁際の作業台に固定されている",
+      "presentation": { "cameraView": "front-elevation", "mount": "wall", "depthRole": "midground", "semanticRole": "scenery", "gameplaySignal": "none", "anchor": "wall-center", "opacity": 1, "scrollFactor": 0.27 },
+      "visualSet": "lab-decor-2",
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false }
+    },
+    "lab-wall-panel-v1": {
+      "category": "object",
+      "lore": "区画の稼働状況を表示する壁面モニタ。今は異常値を出したまま止まっている",
+      "presentation": { "cameraView": "front-elevation", "mount": "wall", "depthRole": "midground", "semanticRole": "scenery", "gameplaySignal": "none", "anchor": "wall-center", "opacity": 1, "scrollFactor": 0.27 },
+      "visualSet": "lab-decor-3",
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false }
+    },
+    "lab-cable-coil-v1": {
+      "category": "object",
+      "lore": "装置へ電力を送る配線束。天井から壁を伝って降りてくる",
+      "presentation": { "cameraView": "front-elevation", "mount": "wall", "depthRole": "midground", "semanticRole": "scenery", "gameplaySignal": "none", "anchor": "wall-center", "opacity": 1, "scrollFactor": 0.27 },
+      "visualSet": "lab-decor-4",
+      "editor": { "allowed": ["x", "y"], "snap": 8, "allowScale": false, "allowRotation": false }
+    },
+    "data-crystal-pattern-v1": {
+      "category": "pattern",
+      "editor": {
+        "allowed": ["x", "y", "count", "dx", "dy", "arcHeight"],
+        "snap": 1,
+        "allowScale": false,
+        "allowRotation": false
+      }
+    },
+    "checkpoint-v1": {
+      "category": "object",
+      "lore": "実験記録の一時保存端末。研究者が作業を中断するときに使う",
+      "presentation": { "cameraView": "orthographic-side", "mount": "floor", "depthRole": "gameplay", "semanticRole": "interactable", "gameplaySignal": "activate", "anchor": "floor-contact", "opacity": 1 },
+      "editor": {
+        "allowed": ["x", "y"],
+        "snap": 8,
+        "allowScale": false,
+        "allowRotation": false
+      },
+      "collision": { "factory": "sensorRect" }
+    }
+  }
+}

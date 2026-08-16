@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "assetGroup": "normal-lab-decor-side-v2",
+  "generator": "generate2dsprite",
+  "pipelineMeta": "processed/pipeline-meta.json",
+  "frames": {
+    "decor-side-1": { "cameraView": "orthographic-side", "mount": "floor", "anchorVisible": true, "meaning": "hazard-warning" },
+    "decor-side-2": { "cameraView": "front-elevation", "mount": "wall", "anchorVisible": true, "meaning": "background-scenery" },
+    "decor-side-3": { "cameraView": "front-elevation", "mount": "wall", "anchorVisible": true, "meaning": "background-scenery" },
+    "decor-side-4": { "cameraView": "front-elevation", "mount": "wall", "anchorVisible": true, "meaning": "background-scenery" }
+  },
+  "visualReview": {
+    "cameraAngleVerified": true,
+    "mountReadabilityVerified": true,
+    "noBakedFloorOrShadow": true,
+    "runtimeCompositeVerified": true,
+    "pcScreenshot": "screenshots/asset-presentation-side-pc.png",
+    "mobileScreenshot": "screenshots/asset-presentation-side-mobile.png",
+    "signalScreenshot": "screenshots/asset-presentation-warning-signal-pc.png"
+  }
+}

@@ -1,0 +1,7 @@
+Reuse the canonical Nyabi Clean design from Korokoro Nyabit without redesigning the character.
+
+Identity lock: round white cat-eared laboratory cleaning robot, glossy black face screen with friendly cyan eyes and cat mouth, cyan top button, blue paw emblem, circular blue brushes, small wheels, flexible vacuum hose with glowing cyan nozzle. White, navy, cyan, and soft gray palette. No gothic, steampunk, rust, snow, or ice motifs.
+
+Action: four-frame ground patrol / cleaning loop for a friendly bright future laboratory. Preserve the source 2x2 frame order and silhouette. The feet/wheel contact baseline must remain stable across frames. Gameplay readability takes priority over decorative detail.
+
+Runtime adaptation: clean transparent RGBA frames, centered and bottom-aligned, equal scale, no clipping or edge contact. Intended for a side-scrolling browser game at approximately 180 px display size.
