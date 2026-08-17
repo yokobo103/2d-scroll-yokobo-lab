@@ -10,6 +10,7 @@ import { applyDamage, applyFall, restoreAtCheckpoint } from './damage-controller
 import { playerHitbox } from './player-hitbox.js';
 import { dataCrystalTotal, evaluateRank, formatRunTime } from './run-evaluation.js';
 import { stepVerticalCamera } from './camera-controller.js';
+import { clearSave, floorRecord, readSave, recordRun, resolveFloorRequest, writeSave } from './save-state.js';
 import { composeThreeCourseStage, courseAtX } from './course-layout.js';
 import {
   buildCollisionShapes,
@@ -43,6 +44,7 @@ const ui = {
   clearScore: document.querySelector('#clearScore'),
   clearTime: document.querySelector('#clearTime'),
   clearMisses: document.querySelector('#clearMisses'),
+  clearBest: document.querySelector('#clearBest'),
   sound: document.querySelector('#soundButton'),
   restart: document.querySelector('#restartButton'),
   action: document.querySelector('#actionButton'),
@@ -97,6 +99,22 @@ document.documentElement.classList.toggle('debug-mobile-qa', startupUrlParams.ha
 if (startupUrlParams.has('debug-reset-draft')) clearLocalStagePatch(stageSource.stageId);
 const stage = resolveStage(stageSource, moduleSpec, prefabRegistry, loadLocalStagePatch(stageSource.stageId));
 const crystalTotal = dataCrystalTotal(stage);
+
+// セーブ。実装済みの階は1Fだけなので、解放式のゲートは今のところ常に1Fへ落ちる。
+// stageIdでのステージロードが入ったら availableFloors を増やすだけで両ドリが成立する。
+const availableFloors = ['1f'];
+if (startupUrlParams.has('debug-reset-save')) clearSave();
+let saveState = readSave();
+const floorRoute = resolveFloorRequest(saveState, startupUrlParams.get('floor'), {
+  available: availableFloors,
+  devBypass: import.meta.env.DEV,
+});
+const currentFloorId = floorRoute.floorId;
+if (floorRoute.blocked) console.warn(`[floor] ${floorRoute.requested} は未解放のため ${currentFloorId} を読み込みます`);
+if (floorRoute.unavailable) console.warn(`[floor] ${floorRoute.requested} は未実装のため ${currentFloorId} を読み込みます`);
+// 調整・デバッグ中のランは記録しない（座標や結晶を人為的に立てているため）。
+const debugRunActive = startupUrlParams.has('editor')
+  || [...startupUrlParams.keys()].some(key => key.startsWith('debug-'));
 let collisionShapes = buildCollisionShapes(stage, prefabRegistry);
 
 const loadImage = src => new Promise((resolve, reject) => {
@@ -611,18 +629,51 @@ const collectSharedItem = (pickup, prefab) => {
 
 const scoreText = () => String(player.itemScore).padStart(6, '0');
 
-const updateClearSummary = () => {
-  ui.clearRank.textContent = evaluateRank({
-    crystals: player.crystals,
-    totalCrystals: crystalTotal,
+const currentRank = () => evaluateRank({
+  crystals: player.crystals,
+  totalCrystals: crystalTotal,
+  missCount: player.missCount,
+});
+
+const collectedCrystalIds = () => stage.pickups
+  .filter(pickup => pickup.prefab === 'data-crystal-v1' && collected.has(pickup.id))
+  .map(pickup => pickup.id);
+
+// 中断でも呼ぶ。拾った結晶は残し、ランク・タイムはクリアしたランからのみ更新する。
+let bestBeforeRun = floorRecord(saveState, currentFloorId);
+let saveWorks = true;
+const persistRun = cleared => {
+  if (debugRunActive || stageEditor.active) return;
+  saveState = recordRun(saveState, {
+    floorId: currentFloorId,
+    cleared,
+    crystalIds: collectedCrystalIds(),
+    rank: currentRank(),
+    timeSeconds: runTime,
     missCount: player.missCount,
+    score: player.itemScore,
   });
+  saveWorks = writeSave(saveState);
+};
+
+const clearBestText = () => {
+  if (debugRunActive) return '調整モードのため、この走行は記録しません。';
+  if (!saveWorks) return 'このブラウザでは記録を保存できません。今回の結果だけの表示です。';
+  const recorded = floorRecord(saveState, currentFloorId).crystals.length;
+  const carry = `記録済みデータ ${recorded} / ${crystalTotal}`;
+  if (!bestBeforeRun.cleared) return `初クリア！ // ${carry}`;
+  return `自己ベスト ${bestBeforeRun.bestRank} ・ ${formatRunTime(bestBeforeRun.bestTime ?? 0)} // ${carry}`;
+};
+
+const updateClearSummary = () => {
+  ui.clearRank.textContent = currentRank();
   ui.clearCrystals.textContent = String(player.crystals);
   ui.clearCrystalTotal.textContent = String(crystalTotal);
   ui.clearCoins.textContent = String(player.coinCount);
   ui.clearScore.textContent = scoreText();
   ui.clearTime.textContent = formatRunTime(runTime);
   ui.clearMisses.textContent = String(player.missCount);
+  ui.clearBest.textContent = clearBestText();
 };
 
 const updateRuntimePrefabs = () => {
@@ -749,6 +800,8 @@ const fallToCheckpoint = () => {
 };
 
 const restart = () => {
+  persistRun(gameWon);
+  bestBeforeRun = floorRecord(saveState, currentFloorId);
   collected.clear();
   firedTriggers.clear();
   Object.assign(player, {
@@ -782,6 +835,11 @@ const restart = () => {
   ui.cinematic.classList.add('is-playing');
 };
 ui.restart.addEventListener('click', restart);
+// タブを閉じる・別アプリへ切り替える瞬間に書き出す。スマホはpagehideしか来ないことがある。
+window.addEventListener('pagehide', () => persistRun(gameWon));
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') persistRun(gameWon);
+});
 
 function update(dt) {
   elapsed += dt;
@@ -979,6 +1037,7 @@ function update(dt) {
     if (exitLift?.runtimeProgress >= 1 && playerOnExitLift) {
       gameWon = true;
       player.vx = 0;
+      persistRun(true);
       updateClearSummary();
       emit(exitLift.runtimeX + exitLift.w / 2, exitLift.runtimeY, '#a6ffff', 70, 340);
       playTone(560, .5, .05, 'sine');

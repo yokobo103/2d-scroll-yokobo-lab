@@ -33,8 +33,9 @@
     "validate:editor-mobile": "node tools/validate_mobile_editor.mjs",
     "validate:boss": "node tools/validate_boss_controller.mjs",
     "validate:boss-sprites": "node tools/run_python.mjs tools/validate_boss_sprite_sheets.py",
+    "validate:save": "node tools/validate_save_state.mjs",
     "validate:build": "node tools/validate_build_output.mjs",
-    "validate": "npm run validate:contact && npm run validate:stage && npm run validate:course && npm run validate:courses && npm run validate:reach && npm run validate:editor-mobile && npm run validate:boss && npm run validate:boss-sprites && npm run validate:movement && npm run validate:growth && npm run validate:camera && npm run validate:damage && npm run validate:action && npm run validate:input-release && npm run validate:runtime-images && npm run validate:enemy && npm run validate:item && npm run validate:audio && npm run validate:loading && npm run validate:presentation && npm run validate:catalog && npm run validate:build"
+    "validate": "npm run validate:contact && npm run validate:stage && npm run validate:course && npm run validate:courses && npm run validate:reach && npm run validate:editor-mobile && npm run validate:boss && npm run validate:boss-sprites && npm run validate:movement && npm run validate:growth && npm run validate:camera && npm run validate:damage && npm run validate:action && npm run validate:input-release && npm run validate:runtime-images && npm run validate:enemy && npm run validate:item && npm run validate:audio && npm run validate:loading && npm run validate:presentation && npm run validate:catalog && npm run validate:save && npm run validate:build"
   },
   "devDependencies": {
     "vite": "^7.1.1"

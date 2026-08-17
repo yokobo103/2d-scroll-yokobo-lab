@@ -33,6 +33,9 @@ jobs:
       - name: Validate runtime images
         run: npm run validate:runtime-images
 
+      - name: Validate save state
+        run: npm run validate:save
+
       - name: Build
         run: npm run build
 

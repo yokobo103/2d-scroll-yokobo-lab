@@ -221,6 +221,8 @@ button { font: inherit; }
 .clear-panel h1 { margin: 8px 0; font: 900 clamp(24px, 3.2vw, 48px)/1.15 'Kiwi Maru', serif; }
 .clear-panel__next-floor { margin: 4px 0 -8px; color: #78efff !important; font-weight: 900; letter-spacing: .14em; }
 .clear-panel p { color: #bad6e1; line-height: 1.8; font-size: clamp(11px, .95vw, 15px); }
+.clear-panel__best { margin: 6px 0 0; color: #8fe6ff !important; font-weight: 900; letter-spacing: .06em; }
+.clear-panel__best:empty { display: none; }
 .clear-panel__result { display: grid; grid-template-columns: 108px 1fr; gap: 18px; align-items: stretch; margin: 20px 0 14px; }
 .clear-panel__rank { display: grid; place-items: center; border: 1px solid rgba(126,244,255,.58); border-radius: 20px; background: radial-gradient(circle at 50% 30%, rgba(91,239,255,.24), rgba(6,28,53,.8)); color: #ffcf69 !important; text-shadow: 0 0 26px rgba(255,184,67,.7); font: 900 64px/1 'Kiwi Maru', serif !important; letter-spacing: 0 !important; }
 .clear-panel__stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; }
