@@ -24,6 +24,8 @@ if (!await exists(indexPath)) {
 const failures = [];
 const indexHtml = await readFile(indexPath, 'utf8');
 for (const match of indexHtml.matchAll(/\b(?:src|href)=["']([^"']+)["']/g)) {
+  // GoatCounter is an external script, not a root-relative Pages asset.
+  if (match[1] === '//gc.zgo.at/count.js') continue;
   if (match[1].startsWith('/')) failures.push(`index.html に絶対参照が残っています: ${match[1]}`);
 }
 
